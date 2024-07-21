@@ -1,4 +1,4 @@
-# Hackspire hackathon: Team Radhe
+# Status Code 1:
 
 ## Requirement:
 

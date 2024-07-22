@@ -1,0 +1,24 @@
+body{
+   overflow: hidden;
+}
+
+.third{
+   position: absolute;
+   top: 0;
+   left: 20rem;
+}
+
+.second{
+   position: absolute;
+   top: -15rem;
+   left: 42rem;
+   z-index: 10;
+}
+
+.first{
+   position: absolute;
+   top: -20rem;
+   left: 70rem;
+   transform: scale(2);
+   z-index: 20;
+}

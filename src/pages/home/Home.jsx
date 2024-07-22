@@ -13,6 +13,9 @@ const Home = () => {
           <span className="text-green-600"> Break</span> The Barriers
         </span>
       </div>
+      <div className="explore">
+        <input type="submit" value="Start Hacking &#10511;" className="btn" />
+      </div>
       <div className="third">
         <svg
           width="1177"

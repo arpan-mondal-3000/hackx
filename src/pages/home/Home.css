@@ -22,3 +22,29 @@ body{
    transform: scale(2);
    z-index: 20;
 }
+
+.explore{
+   position: absolute;
+   margin: 30px;
+   bottom: 0;
+   width: 100vw;
+   z-index: 30;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.btn{
+   color: white;
+   padding: 10px;
+   font-size: 1.5rem;
+   text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
+   cursor: pointer;
+   animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+   0%{transform: translateY(0px);}
+   50%{transform: translateY(-20px);}
+   100%{transform: translateY(0px);}
+}

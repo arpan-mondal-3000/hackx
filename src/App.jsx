@@ -3,7 +3,10 @@ import Home from "./pages/home/Home";
 function App() {
   return (
     <>
-    <Home />
+    <div className="bg-slate-900">
+      <Home />
+    </div>
+    
     </>
   );
 }

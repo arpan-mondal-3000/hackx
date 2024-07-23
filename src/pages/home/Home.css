@@ -5,20 +5,20 @@ body{
 .third{
    position: absolute;
    top: 0;
-   left: 20rem;
+   left: 25rem;
 }
 
 .second{
    position: absolute;
    top: -15rem;
-   left: 42rem;
+   left: 50rem;
    z-index: 10;
 }
 
 .first{
    position: absolute;
    top: -20rem;
-   left: 70rem;
+   left: 75rem;
    transform: scale(2);
    z-index: 20;
 }
@@ -47,4 +47,83 @@ body{
    0%{transform: translateY(0px);}
    50%{transform: translateY(-20px);}
    100%{transform: translateY(0px);}
+}
+.custom-shape-divider-bottom-1721746906 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1721746906 svg {
+   position: relative;
+   display: block;
+   width: calc(186% + 1.3px);
+   height: 120px;
+}
+
+.custom-shape-divider-bottom-1721746906 .shape-fill {
+   fill: #16A34A;
+}
+.custom-shape-divider-top-1721747021 {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+   transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1721747021 svg {
+   position: relative;
+   display: block;
+   width: calc(186% + 1.3px);
+   height: 120px;
+}
+.custom-shape-divider-top-1721747206 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1721747206 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 106px;
+}
+
+.custom-shape-divider-top-1721747206 .shape-fill {
+    fill: #18cabb88;
+}
+
+.custom-shape-divider-top-1721747021 .shape-fill {
+   fill: #16A34A;
+}
+.custom-shape-divider-bottom-1721747544 {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   overflow: hidden;
+   line-height: 0;
+}
+
+.custom-shape-divider-bottom-1721747544 svg {
+   position: relative;
+   display: block;
+   width: calc(109% + 1.3px);
+   height: 166px;
+}
+
+.custom-shape-divider-bottom-1721747544 .shape-fill {
+   fill: #18cabb88;
 }

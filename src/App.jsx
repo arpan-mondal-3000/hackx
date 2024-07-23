@@ -1,11 +1,10 @@
 import Home from "./pages/home/Home.jsx";
+import Login from "./pages/login/Login.jsx";
 
 function App() {
   return (
     <>
-      <div className="bg-slate-900">
-        <Home />
-      </div>
+      <Login />
     </>
   );
 }

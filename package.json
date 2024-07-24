@@ -13,6 +13,8 @@
     "firebase": "^10.12.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-particle-js": "^1.0.1",
+    "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.12"
   },
   "devDependencies": {

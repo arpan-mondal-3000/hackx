@@ -35,7 +35,7 @@
     height: 100%;
     background-color: #15803d; /* Hover color */
     z-index: -1;
-    transition: left 1s ease-in-out;
+    transition: left 0.75s ease-in-out;
   }
   
   /* Button hover effect */

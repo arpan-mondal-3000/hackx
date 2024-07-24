@@ -6,7 +6,6 @@ import GreenParticles from "./Particle";
 const Home = () => {
   return (
     <>
-      <GreenParticles />
       <div className="grid place-content-center h-screen text-green-700 tracking-widest">
         <span className="text-5xl mx-auto font-bold tracking-[0.25em]">
           Hack X
@@ -17,6 +16,9 @@ const Home = () => {
         </span>
         <span className="text-white mt-2">Follow us on: </span>
         <StyledButton />
+        {/* <img src={topSVG} alt="Base" className="absolute z-3 right-1 rotate-3" />
+        <img src={middleSVG} alt="Middle one" className="absolute z-4 -right-10 -rotate-6" />
+        <img src={baseSVG} className="absolute z-5 right-0 rotate-[-3]"></img> */}
         <div>
           <div class="custom-shape-divider-bottom-1721746906">
             <svg

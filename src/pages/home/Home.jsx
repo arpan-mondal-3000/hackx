@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import StyledButton from "./StyledButton";
-import GreenParticles from "./Particle";
 
 const Home = () => {
   return (

@@ -5,7 +5,7 @@ import GreenParticles from "./pages/home/Particle.jsx";
 function App() {
   return (
     <>
-      <Home />
+      <Login />
     </>
   );
 }

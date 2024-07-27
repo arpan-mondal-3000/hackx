@@ -60,60 +60,6 @@ function Login() {
           </div>
         </div>
       </div>
-      <div>
-        <div className="custom-shape-divider-bottom-1721746906">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 0L0 0 598.97 114.72 1200 0z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <div className="custom-shape-divider-top-1721747021">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <div className="custom-shape-divider-top-1721747206">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-        <div className="custom-shape-divider-bottom-1721747544">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z"
-              className="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </div>
     </>
   );
 }

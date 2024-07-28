@@ -28,7 +28,7 @@ function Login() {
               placeholder="Enter your password"
             />
             <div className="text-white text-sm underline">
-              <span className="cursor-pointer">forgot password?</span>
+              <span className="cursor-pointer mt-1">forgot password?</span>
             </div>
             <input
               type="submit"

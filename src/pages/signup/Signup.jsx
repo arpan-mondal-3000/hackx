@@ -1,8 +1,7 @@
-import "./login.css";
-import { useFirebase } from "../../context/Firebase";
 import { useState } from "react";
+import { useFirebase } from "../../context/Firebase";
 
-function Login() {
+function Signup() {
   const firebase = useFirebase();
 
   const [email, setEmail] = useState("");
@@ -13,7 +12,7 @@ function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      let res = await firebase.loginUserWithEmailAndPassword(email, password);
+      let res = await firebase.signupUserWithEmailAndPassword(email, password);
       setColor("text-white");
       setMessage("Successful");
     } catch (e) {
@@ -22,8 +21,10 @@ function Login() {
         setMessage("Email is Invalid!");
       } else if (e.code === "auth/missing-password") {
         setMessage("Password is missing!");
-      } else if (e.code === "auth/invalid-credential") {
-        setMessage("Email or Password is incorrect!");
+      } else if (e.code === "auth/weak-password") {
+        setMessage("Your password should be atleast 6 characters!");
+      } else if (e.code === "auth/email-already-in-use") {
+        setMessage("This email is already in use! Login Instead");
       } else {
         setMessage(`${e.message}`);
       }
@@ -37,8 +38,8 @@ function Login() {
           Hack X
         </span>
         <div className="flex justify-center border-2 rounded-xl border-green-700 font-sans flex-col align-middle max-w-2/6 mx-auto text-center p-10 m-5 shadow-2xl">
-          <h1 className="text-green-500 text-3xl mt-6">Welcome Back!</h1>
-          <h2>Enter your credentials to start hacking</h2>
+          <h1 className="text-green-500 text-3xl mt-6">Welcome To HackX!</h1>
+          <h2>Signup with your credentials to start hacking</h2>
           <form
             className="mt-10 text-left flex flex-col text-green-500"
             onSubmit={handleSubmit}
@@ -65,13 +66,10 @@ function Login() {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <div className="text-white text-sm underline">
-              <span className="cursor-pointer mt-1">forgot password?</span>
-            </div>
             <input
               type="submit"
-              value="Login"
-              className="text-white text-xl bg-green-600 py-2 mt-4 cursor-pointer rounded-lg hover:bg-white hover:text-green-900 transition duration-500"
+              value="Signup"
+              className="text-white text-xl bg-green-600 py-2 mt-8 cursor-pointer rounded-lg hover:bg-white hover:text-green-900 transition duration-500"
             />
           </form>
           <div className="mt-10 flex justify-between gap-2">
@@ -81,7 +79,7 @@ function Login() {
                 alt="G"
                 className="w-5"
               />
-              Sign in with Google
+              Sign Up with Google
             </button>
             <button className="border-2 px-4 py-2 rounded-xl flex align-middle justify-center gap-2 hover:border-green-600 hover:text-green-600 transition duration-300">
               <img
@@ -89,11 +87,11 @@ function Login() {
                 alt="A"
                 className="w-5"
               />
-              Sign in with Apple
+              Sign Up with Apple
             </button>
           </div>
           <div className="mt-5 mb-6 text-green-500">
-            Don't have an account? <span className="text-white">Sign up</span>
+            Already have an account? <span className="text-white">Login</span>
           </div>
           <div className={color}>{message}</div>
         </div>
@@ -102,4 +100,4 @@ function Login() {
   );
 }
 
-export default Login;
+export default Signup;

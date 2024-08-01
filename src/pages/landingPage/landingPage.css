@@ -16,6 +16,8 @@
 }
 .custom-shape-divider-top-1722176766 {
     position: relative;
+    display: flex;
+    justify-content: center;
     top: 0;
     left: 0;
     width: 100%;

@@ -1,4 +1,5 @@
 import "./login.css";
+import Navbar from "../../components/navbar/Navbar";
 import { useFirebase } from "../../context/Firebase";
 import { useState } from "react";
 
@@ -32,7 +33,10 @@ function Login() {
 
   return (
     <>
-      <div className="flex flex-col justify-center align-middle h-screen">
+      <div>
+        <Navbar />
+      </div>
+      <div className="flex flex-col justify-center align-middle min-h-screen">
         <span className="text-5xl mx-auto font-bold tracking-[0.25em] bg-gradient-to-t from-green-500 to-green-800 p-2 pl-5 rounded-lg">
           Hack X
         </span>

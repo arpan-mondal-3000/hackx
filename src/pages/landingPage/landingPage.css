@@ -1,3 +1,6 @@
+*{
+    scrollbar-width: thin;
+}
 @keyframes appear{
     from{
         opacity: 0;
@@ -15,7 +18,7 @@
     animation-range: entry 0% cover 40%;
 }
 .custom-shape-divider-top-1722176766 {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     top: 0;
@@ -27,6 +30,7 @@
 
 .custom-shape-divider-top-1722176766 svg {
     position: relative;
+    top: 0;
     display: block;
     width: calc(110% + 1.3px);
     height: 150px;

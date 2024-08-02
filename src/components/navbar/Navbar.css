@@ -2,3 +2,11 @@
     position: relative;
     margin-left: 40px;
 }
+
+.navbar-ul li{
+    font-weight: 300;
+}
+
+.navbar-ul li a:hover{
+    color: #22C55E;
+}

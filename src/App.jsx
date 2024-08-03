@@ -8,7 +8,7 @@ import LandingPage from "./pages/landingPage/landingPage.jsx";
 function App() {
   return (
     <>
-      <LandingPage />
+      <Login />
     </>
   );
 }

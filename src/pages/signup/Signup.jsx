@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useFirebase } from "../../context/Firebase";
+import { useFirebase } from "../../context/FirebaseContext";
 
 function Signup() {
   const firebase = useFirebase();
